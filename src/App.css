@@ -1,38 +1,359 @@
-.App {
-  text-align: center;
+body{
+margin: 0;
+padding: 0;
+background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown{
+    text-align: center;
+    border-radius: 15px;
+    visibility: hidden;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dropdown button{
+    width: 50px;
+    height: 50px;
+    background-color: #001d21;
+    color: #b2ebf9;
+    border: none;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+    border-radius: 15px;
+}
+
+.dropdown button:hover{
+    cursor: pointer;
+}
+  
+  .menu {
+    position: absolute;
+    list-style-type: none;
+    margin: 50px 100px 0 0;
+    padding: 0;
+    width: 100px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .menu > li {
+    color: #b2ebf9;
+    background-color: #001d21;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .menu > li >button:hover {
+    box-shadow: 0px 0px 1000px 0px #37caef;
+    
   }
+  
+  .menu > li > button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: #b2ebf9;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.sidebar{
+    background-color: rgb(0, 0, 0);
+    float: left;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar ul{
+    margin-top: 100px;
+}
+
+ul>li{
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid #000000;
+    border-radius: 0 50px 50px 0 ;
+    text-align: left;
+    border: none;
+   
+}
+
+ul>li>a{
+    display: flex;
+    text-decoration: none;
+    color: #b2ebf9;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+ul>li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1000px 0px #37caef;
+}
+
+.logo{
+    margin-left: 35px;
+}
+
+.content{
+    background-color: black;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    padding: 10px 0;
+    background-color: transparent;
+    color: #595959;
+     
+}
+
+footer > ul > li > img {
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    margin-left: 10px;
+    filter:
+      brightness(1000%) grayscale(100%) /* To change the image color to the white */
+      opacity(0.1) /* To apply the color all over the image */
+      drop-shadow(0 0 0 #ffffff) /* To apply my costum color */
+      drop-shadow(0 0 0 #ffffff) /* To apply my costum color more stronger */
+      drop-shadow(0 0 0 #ffffff)
+  }
+
+  .icon:hover{
+    filter:
+      brightness(1000%) grayscale(100%) /* To change the image color to the white */
+      opacity(0.1) /* To apply the color all over the image */
+      drop-shadow(0 0 0 #ffffff) /* To apply my costum color */
+      drop-shadow(0 0 0 #ffffff) /* To apply my costum color more stronger */
+      drop-shadow(0 0 0 #ffffff)
+      drop-shadow(0 0 0 #ffffff)
+
+  }
+  
+  .home{
+    background-color: #001d21;
+    color: #b2ebf9;
+    font-weight: lighter;
+    float: left;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 17%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+  }
+
+  
+
+
+  .contact{
+    background-color: #001d21;
+    color: #b2ebf9;
+    font-weight: lighter;
+    float: left;
+    position: relative;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+  }
+
+  .about{
+    width: 600px;
+    background-color: #001d21;
+    color: #b2ebf9;
+    font-weight: lighter;
+    float: left;
+    position: relative;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+  }
+
+  .about > img{
+    border-radius: 100%;
+  }
+
+.projects{
+    background-color: #001d21;
+    color: #b2ebf9;
+    font-weight: lighter;
+    float: left;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 17%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+  }
+  .home h1{
+    font-weight: lighter;
+  }
+
+  .contact h1{
+    font-weight: lighter;
+  }
+
+  .contact > form{
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+
+  .contact > form > div > button{
+    border: 1px solid #37caef;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #001d21;
+    color: #37caef;
+    width: 100%;
+    
+  }
+
+  .contact > form > div > button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 75px -10px #37caef;
+
+  }
+
+  .contact > form > div > input, textarea{
+    width: 100%;
+    background-color: #001d21;
+    color: #37caef;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: inset 0 0 50px -20px #37caef;
+  }
+
+  #musicplayer{
+    display: flex;
+    text-decoration: none;
+    color: #b2ebf9;
+    font-weight: lighter;
+    padding: 5px;
+  }
+
+  .c-player{
+    width: 60%;
+    background-color: #001d21;
+    color: #b2ebf9;
+    font-weight: lighter;
+    float: left;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-top: 0%;
+    margin-right: auto;
+    margin-bottom: 17%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 0px #004b5e;
+  }
+
+  .c-player--controls > button{
+    background-color: #b2ebf9;
+    border: none;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .c-player--controls .play-btn{
+    padding: 20px;
+    border-radius: 100px;
+  }
+
+  .c-player--controls .play-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 75px -10px #37caef;
+  }
+
+  .c-player--controls .skip-btn{
+    background-color: transparent;
+    color: #b2ebf9;
+    border-radius: 100px;
+  }
+
+  .c-player--controls .skip-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 75px -10px #37caef;
+    background-color: #002933;
+  }
+
+  .c-player--details > div > img{
+    width: 250px;
+    border-radius: 3%;
+    box-shadow: 0 0 75px -10px #0c91b2;
+  }
+
+@media (max-width: 970px){
+    .home{
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .c-player{
+      margin-left: 15%;
+      margin-right: 15%;
+
+  }
+
+    .projects{
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+
+    .dropdown{
+        background-color: #001d21;
+        width: 50px;
+        height: 50px;
+        position:fixed;
+        right: 75px;
+        top: 25px;
+        box-shadow: 0 0 75px -5px #37caef;
+    }
+
+    .contact{
+        width: fit-content;
+        margin: 50px 30px;
+    }
+
+    .about{
+        width: fit-content;
+        margin: 50px 30px;
+
+    }
+
+    .sidebar ul{
+        display: none;
+    }
+
+    .dropdown{
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .logo{
+        margin-left: 0px;
+        width: 100px;
+    }
 }
